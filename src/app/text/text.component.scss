@@ -1,0 +1,25 @@
+.text {
+
+  &__input {
+    background: #efefef;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 0;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  &__button {
+    background: salmon;
+    color: #fff;
+    padding: 10px 25px;
+    margin-left: 10px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+}
+
+.active {
+  background: black;
+}

@@ -1,0 +1,16 @@
+.board {
+  background: #f7f7f7;
+  min-height: 300px;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  &__message {
+    padding: 15px;
+
+    &__text {
+      background: #e4e4e4;
+      padding: 10px;
+      text-align: right;
+    }
+  }
+}

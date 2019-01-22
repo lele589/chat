@@ -1,1 +1,3 @@
 <app-avatar imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcsRpyt1fmcKeI-9augzMPAsy1AvGZoYfG-nc4a2nr4uQclgtj"></app-avatar>
+<app-board [messages]="parentMessage"></app-board>
+<app-text (written)="receiveMessage($event)"></app-text>

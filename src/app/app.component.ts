@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chat';
+  parentMessage: string[] = [];
+
+  receiveMessage(message) {
+    this.parentMessage.push(message);
+  }
 }
