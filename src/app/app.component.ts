@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'chat';
   parentMessage: string[] = [];
 
+  constructor() {}
+
   receiveMessage(message) {
     this.parentMessage.push(message);
   }

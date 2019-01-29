@@ -1,0 +1,9 @@
+<ul class="contacts__list">
+  <li *ngFor="let user of usersList" class="contacts__item">
+    <!--<button (click)="isWritten()" class="contacts__user u-button&#45;&#45;reset">-->
+      <app-avatar [imgUrl]="user.picture.thumbnail" [size]="30"></app-avatar>
+      <div>{{ user.name.first }} {{ user.name.last }}</div>
+      <div>{{ user.dob.age }} años</div>
+    <!--</button>-->
+  </li>
+</ul>

@@ -7,10 +7,15 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class AvatarComponent implements OnInit {
   @Input() imgUrl: string;
+  @Input() size: number;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeSize(size) {
+
   }
 
 }
