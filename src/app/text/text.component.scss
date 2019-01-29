@@ -1,5 +1,11 @@
 .text {
 
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__input {
     background: #efefef;
     border-radius: 2px;
@@ -7,19 +13,26 @@
     border: 0;
     font-size: 14px;
     padding: 10px;
+    width: 75%;
   }
 
   &__button {
-    background: salmon;
+    background: lightgrey;
     color: #fff;
     padding: 10px 25px;
     margin-left: 10px;
     border: 0;
     font-size: 16px;
     border-radius: 2px;
+    width: 20%;
+  }
+
+  &__error {
+    font-size: 13px;
+    color: red;
   }
 }
 
 .active {
-  background: black;
+  background: salmon;
 }

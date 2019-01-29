@@ -1,6 +1,8 @@
-<input name="message" minlength="3" #messageInput type="text" [(ngModel)]="message" placeholder="Message" class="text__input">
-<button [ngClass]="{'active': message.length > 0}" (click)="sendInfo($event)" class="text__button"> Enviar </button>
-<p *ngIf="message.length === 0">Este campo es requerido</p>
+<p class="text__error" *ngIf="message.length === 0">Este campo es requerido</p>
+<div class="text__box">
+  <input name="message" minlength="3" #messageInput type="text" [(ngModel)]="message" placeholder="Message" class="text__input">
+  <button [ngClass]="{'active': message.length > 0}" (click)="sendInfo($event)" class="text__button"> Enviar </button>
+</div>
 
 
 

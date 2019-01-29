@@ -8,7 +8,7 @@
   
   <article class="chat__board">
     <app-board [messages]="parentMessage"></app-board>
-    <app-text (written)="receiveMessage($event)"></app-text>
+    <app-text class="chat__text" (written)="receiveMessage($event)"></app-text>
   </article>
   
 </section>
